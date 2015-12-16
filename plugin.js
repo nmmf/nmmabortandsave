@@ -6,7 +6,7 @@
 CKEDITOR.plugins.add(
 	'nmmabortandsave',
 	{
-		lang 	: 	["de","en","en-au","en-ca","en-gb","pl"]
+		lang 	: 	["de","en","en-au","en-ca","en-gb","pl"],
 		init	:	function(editor)
 					{
 						editor.addCommand(
