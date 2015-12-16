@@ -15,3 +15,9 @@ This Plugin integrate custom save/abort functions to CKEditor.
 	
  3. Enable the plugin by using the extraPlugins configuration setting.
 	Example: CKEDITOR.config.extraPlugins = "nmmabortandsave";
+	
+ 4. Config:
+	CKEDITOR.config.nmmabortandsave = {
+		onSave	:	function(editor){},
+		onAbort :	function(editor){}
+	};
