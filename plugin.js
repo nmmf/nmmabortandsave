@@ -6,6 +6,7 @@
 CKEDITOR.plugins.add(
 	'nmmabortandsave',
 	{
+		lang 	: 	["de","en","en-au","en-ca","en-gb","pl"]
 		init	:	function(editor)
 					{
 						editor.addCommand(
@@ -25,7 +26,7 @@ CKEDITOR.plugins.add(
 											}
 							}
 						);
-						editor.ui.addButton('NMMSave', {label : 'Speichern', command : 'nmmsave'});
+						editor.ui.addButton('NMMSave', {label : editor.lang.nmmabortandsave.save, command : 'nmmsave'});
 						
 						editor.addCommand(
 							'nmmabort', 
@@ -44,7 +45,7 @@ CKEDITOR.plugins.add(
 											}
 							}
 						);
-						editor.ui.addButton('NMMAbort', {label : 'Abbrechen', command : 'nmmabort'});
+						editor.ui.addButton('NMMAbort', {label : editor.lang.nmmabortandsave.abort, command : 'nmmabort'});
 					}
 	}
 );
